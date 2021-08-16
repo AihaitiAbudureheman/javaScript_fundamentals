@@ -1,0 +1,12 @@
+
+body {
+  color: #000;
+  box-sizing: border-box;
+  background-color: #FFDF2B;
+  padding: 48px;
+}
+
+h1 {
+  font-size: 6em;
+  font-weight: bolder;
+}
