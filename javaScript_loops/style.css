@@ -1,0 +1,31 @@
+body {
+    color: #000;
+    box-sizing: border-box;
+    background-color: #FFDF2B;
+    padding: 48px;
+  }
+  
+  h1 {
+    font-size: 6em;
+    font-weight: bolder;
+  }
+
+  main {
+    width: 90%;
+    max-width: 1080px;
+    padding: 40px 0 0;
+    margin: 0 auto;
+  }
+  
+  main div {
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 64px;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 0;
+    margin: 0.5em;
+  }

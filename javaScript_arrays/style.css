@@ -1,0 +1,38 @@
+body {
+  color: #000;
+  box-sizing: border-box;
+  background-color: #ffdf2b;
+  padding: 48px;
+}
+
+h1 {
+  font-size: 4.2em;
+  text-align: center;
+  margin-bottom: 0.35em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+li {
+  line-height: 1.25;
+  margin: 0 0 1.1em;
+  color: #191919;
+  padding: 0.8em;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+main p {
+  font-size: 3.2em;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+

@@ -1,0 +1,15 @@
+body {
+    color: #000;
+    box-sizing: border-box;
+    background-color: #FFDF2B;
+    padding: 48px;
+  }
+  
+  h1 {
+    font-size: 4em;
+    font-weight: bolder;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
