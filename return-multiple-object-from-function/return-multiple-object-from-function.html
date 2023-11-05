@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return multiple object from a function</title>
+</head>
+<body>
+    <h3>Return multiple object from a function</h3>
+
+    <script>
+        // simple way
+        const person1 = {
+            firstName: 'Bipon',
+            lastName: 'Biswas',
+            fullName: () => {
+                console.log(person1.firstName + ' ' +  person1.lastName)
+            }
+        }
+        const person2 = {
+            firstName: 'Sajib',
+            lastName: 'Biswas',
+            fullName: () => {
+                console.log(person2.firstName + ' ' +  person2.lastName)
+            }
+        }
+        // console.log(person1)
+        // console.log(person1.fullName())
+        // console.log(person2)
+        // console.log(person2.fullName())
+
+        //1. Using an Object:
+        // You can return multiple values as properties of an object. Here's an example:
+        function person(firstName, lastName, age){
+            return{
+                firstName: firstName,
+                lastName: lastName,
+                age: age,
+                fullName: function(){
+                    console.log(this.firstName + ' ' + this.lastName + ' ' + age)
+                }
+            }
+        }
+        console.log(person('Bipon', 'Biswas', 25))
+        console.log(person('Mead', 'Fahim', 22))
+
+        const data = person('Simon', 'Gomez', 24)
+        console.log(data.fullName())
+
+        //2. Using an Array:
+        //You can return multiple values as elements of an array. Here's an example:
+        function getNumbers(){
+            return [1,2,3,4,5];
+        }
+        
+        const numbers = getNumbers();
+        // console.log(numbers[0])
+        // console.log(numbers[1])
+        // console.log(numbers[2])
+
+        //2. Using a Custom Class or Constructor:
+        class Person{
+            constructor(name, age, city){
+                this.name = name;
+                this.age = age;
+                this.city = city;
+            }
+        }
+        function createPerson(){
+            return new Person("John", 25, "Dhaka");
+        }
+        const newperson = createPerson();
+        // console.log(newperson.name);
+        // console.log(newperson.age);
+        // console.log(newperson.city)
+    </script>
+    
+</body>
+</html>
